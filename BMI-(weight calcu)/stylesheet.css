@@ -1,0 +1,197 @@
+*{
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #00a8ff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    
+}
+body{
+    text-align: center;
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+      linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+}
+
+button {
+    background-color: #1984ff;
+    /* width: 200px; */
+    padding-bottom: 30px auto;
+    margin-bottom: 20px auto;
+    /* height: 50px; */
+    /* font-size: 25px; */
+    color: #f1c40f;
+    box-shadow: 4px 4px 4px 4px rgba(25, 132, 255, 0.719);
+    border: 5px solid #1e5491;
+    border-radius: 10px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -khtml-transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px auto;
+    line-height: 50px;
+    font-family: "Brush Script MT ", cursive;
+    font-size: 30px;
+}
+button:hover {
+    background-color: #f7ca18ee;
+    color: #1984ff;
+    border: 4px solid #a5911fda;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgba(255, 205, 5, 0.911);
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 5px 14px;
+    border: 2px solid rgba(0, 102, 255, 0.589);
+    margin-bottom: 10px;
+    background-color: rgba(1, 37, 156, 0.4);
+    outline: none;
+    color: #fffb00;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 102, 255, 0.589);
+    background-color: rgb(63, 78, 121);
+}
+
+form {
+    background-color: #b18d00af;
+    padding: 20px;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(202, 155, 0, 0.4);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #f1c40f;
+    padding: 20px;
+
+    box-shadow: 10px 10px 10px 10px rgba(241, 196, 15, 0.658);
+    border-radius: 10px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -khtml-transition: 0.5s;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1c40f;
+  
+    text-align: center;
+}
+
+#footer-text {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1c40f;
+  
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    border-radius: 100px;
+    font-family: "Brush Script MT ", cursive;
+    
+}
+#footer-text a {
+    color: #0066ff;
+    text-decoration: underline;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: "Brush Script MT ", cursive;
+    top: 10px;
+    right: 10px;
+}
+#footer-text a:hover {
+    color: #012a68;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Brush Script MT ", cursive;
+    
+}

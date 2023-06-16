@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h1 class="text-center">Check your BMI</h1>
+    		
+    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p>how much is your weight(KG)</p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>And your height(CM)</p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+    		</form>
+			<div id="results" style="margin: 20px;">Your BMI results will appear here</div>
+			<p>Note: The BMI calculation may not be suitable for athletes and individuals with high muscle mass due to their unique body composition.</p>
+    	</div>
+    </div>
+	<script src="main.js"></script>
+</body>
+<footer>
+	<div class="footer">
+			<div id="footer-text">
+			<p>Made By <a href="https://github.com/alwalid54321">alwalid54321</a></p>
+			</div>
+		
+	</div>
+
+</footer>
+</html>
